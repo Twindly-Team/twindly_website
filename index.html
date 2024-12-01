@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .VStack {
+      display: flex;
+      flex-direction: column;
+    }
+    .HStack {
+      display: flex;
+      flex-direction: row;
+    }
+    body {
+      background-color: rgb(26, 26, 26);
+      background-image: url('images/HOMEPAGE.png');
+      background-repeat: no-repeat;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .top-bar-logo {
+      width: 22px;
+      height: 32px;
+    }
+    .top-bar {
+      gap: 8px;
+      margin: 20px 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+    }
+    .header {
+      padding-top: 104px;
+      padding-bottom: 1600px;
+      align-items: center;
+    }
+    .footer {
+      gap: 100px;
+      margin: 340px auto;
+      align-items: center;
+    }
+    .social-media-icon {
+      width: 56px;
+      height: 56px;
+    }
+    .highlight-item {
+      gap: 24px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .highlight-title {
+      font-weight: 900;
+      font-size: 40px;
+    }
+    .highlight-subtitle {
+      color: #838383;
+      font-size: 21px;
+    }
+    .download-button {
+      display: inline-block;
+      margin-top: 100px;
+      width: 272px;
+      height: 44px;
+      border: 0px;
+      border-radius: 22px;
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+    }
+    .gradient-image {
+        position: relative; /* Position relative to contain the pseudo-element */
+        display: inline-block; /* Fit the image size */
+    }
+    .gradient-image img {
+        display: block; /* Remove bottom space around the image */
+        width: 100%; /* Set image to full width of the container */
+        height: 100%; /* Maintain aspect ratio */
+        object-fit: cover;
+    }
+    .gradient-image::after {
+      content: ""; /* Required to show the pseudo-element */
+      position: absolute;
+      top: 0;
+      right: 0; /* Start gradient overlay from the right */
+      width: 50%; /* Adjust to cover the right side */
+      height: 100%;
+      background: linear-gradient(to left, rgba(26,26,26,0.9), rgba(26,26,26,0)); /* Right to left gradient */
+      pointer-events: none; /* Ensure gradient is non-interactive */
+    }
+    .gradient-image-right {
+        position: relative; /* Position relative to contain the pseudo-element */
+        display: inline-block; /* Fit the image size */
+    }
+    .gradient-image-right img {
+        display: block; /* Remove bottom space around the image */
+        width: 100%; /* Set image to full width of the container */
+        height: 100%; /* Maintain aspect ratio */
+        object-fit: cover;
+    }
+    .gradient-image-right::after {
+      content: ""; /* Required to show the pseudo-element */
+      position: absolute;
+      top: 0;
+      right: 0.5; /* Start gradient overlay from the right */
+      width: 50%; /* Adjust to cover the right side */
+      height: 100%;
+      background: linear-gradient(to right, rgba(26,26,26,0.9), rgba(26,26,26,0)); /* Right to left gradient */
+      pointer-events: none; /* Ensure gradient is non-interactive */
+    }
+</style>
+</head>
+<body class="primary-text">
+  <div class="HStack top-bar">
+    <img src="images/logo.png" class="top-bar-logo"/>
+    <img src="images/Twindly.svg" />
+  </div>
+  <div class="VStack header">
+    <img src="images/logo.png" />
+    <span style="font-weight: bold; font-size: 90px;">Twindly AI</span>
+    <span style="font-weight: bold; font-size: 20px;">Your AI Twin for Smarter Dating</span>
+    <button class="download-button">DOWNLOAD</button>
+  </div>
+  <div class="VStack" style="gap: 300px;">
+    <div class="HStack highlight-item">
+      <div class="VStack" style="gap: 12px; margin-left: 166px; max-width: 300px;">
+        <img src="images/logo.png" width="72" height="93" />
+        <span class="highlight-title">Twindly: Your AI Twin for Smarter Dating</span>
+        <span class="highlight-subtitle">Match faster, Connect deeper. Your AI Twin learns, mimics, and represents you. Create your AI Twin now and start connecting like never before!</span>
+      </div>
+      <div class="gradient-image-right" style="width: 50%;">
+        <img src="images/highlight1.png"/>
+      </div>
+    </div>
+    <div class="HStack highlight-item">
+      <div class="gradient-image">
+        <img src="images/highlight2.png"/>
+      </div>
+      <div class="VStack" style="gap: 12px; margin-right: 166px; align-items: flex-end; max-width: 300px;">
+        <img src="images/logo.png" width="72" height="93" />
+        <span class="highlight-title" style="text-align: right;">Double the Chat <br />Double the Fun</span>
+        <span class="highlight-subtitle" style="text-align: right;">Chat with others’ AI Twins and see how others interact with yours. Train your AI Twin to break the ice and find your perfect match.</span>
+      </div>
+    </div>
+    <div class="HStack highlight-item">
+      <div class="VStack" style="gap: 12px; margin-left: 166px; max-width: 300px;">
+        <img src="images/logo.png" width="72" height="93" />
+        <span class="highlight-title">Build your Tag-Driven AI Twin</span>
+        <span class="highlight-subtitle">Now it’s time to build you AI Twin! Your AI Twin learns from you and turns your words into smart tags for your profile. Meet the AI Onboarding Assistant—your last step before exploring Twindly!</span>
+      </div>
+      <div class="gradient-image-right">
+        <img src="images/highlight3.png"/>
+      </div>
+    </div>
+  </div>
+  <div class="VStack footer">
+    <span>SOCIAL MEDIA</span>
+    <div class="HStack" style="gap: 60px;">
+      <img src="images/twitter.png" class="social-media-icon" />
+      <img src="images/facebook.png" />
+      <img src="images/tiktok.png" />
+      <img src="images/instagram.png" />
+      <img src="images/social5.png" />
+    </div>
+    <span style="padding-top: 100px; color: #838383;">Copyright © 2024. Starfishyz Technologies Inc.</span>
+  </div>
+</body>
+</html>
