@@ -39,10 +39,12 @@ body {
 .brand-title {
   font-family: 'Rigatoni', sans-serif;
   font-size: 90px;
+  color: white;
 }
 .brand-subtitle {
   font-family: 'Rigatoni', sans-serif;
   font-size: 20px;
+  color: white;
 }
 .header {
   padding-top: 104px;
@@ -51,7 +53,7 @@ body {
 }
 .footer {
   gap: 100px;
-  margin: 340px auto;
+  margin: 100px auto;
   align-items: center;
 }
 .social-media-icon {
@@ -67,6 +69,7 @@ body {
   font-family: 'Rigatoni', sans-serif;
   font-size: 40px;
   text-transform: uppercase;
+  color: white;
 }
 .highlight-subtitle {
   font-family: 'Hubot-Sans', sans-serif;
@@ -124,4 +127,12 @@ body {
   height: 100%;
   background: linear-gradient(to right, rgba(26,26,26,0.9), rgba(26,26,26,0)); /* Right to left gradient */
   pointer-events: none; /* Ensure gradient is non-interactive */
+}
+.subscription-form {
+  margin: 100px auto;
+}
+.social-media-label {
+  font-family: 'Rigatoni', sans-serif;
+  font-size: 30px;
+  color: white;
 }
