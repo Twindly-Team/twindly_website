@@ -22,6 +22,7 @@ body {
   background-color: rgb(26, 26, 26);
   background-image: url('../images/HOMEPAGE.png');
   background-repeat: no-repeat;
+  background-position: center center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
