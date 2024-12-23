@@ -5,6 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Twindly</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style>
+    /* Media query for mobile devices */
+    @media (max-width: 480px) {
+      .brand-title {
+        font-size: 28px; /* Smaller font size for mobile */
+      }
+      .brand-subtitle {
+        font-size: 10px;
+      }
+      .section-header-label {
+        font-family: 'Rigatoni', sans-serif;
+        font-size: 20px;
+        color: white;
+      }
+      .form-floating {
+        padding: 0 24px;
+      }
+      .social-media-icons {
+        gap: 32px;
+      }
+      .social-media-icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYXSNY8PEB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -99,12 +125,12 @@
     <!-- social media -->
     <div class="VStack section">
       <span class="section-header-label">SOCIAL MEDIA</span>
-      <div class="HStack" style="gap: 60px;">
+      <div class="HStack social-media-icons">
         <img src="images/twitter.png" class="social-media-icon" />
-        <img src="images/facebook.png" />
-        <img src="images/tiktok.png" />
-        <img src="images/instagram.png" />
-        <img src="images/social5.png" />
+        <img src="images/facebook.png" class="social-media-icon" />
+        <img src="images/tiktok.png" class="social-media-icon" />
+        <img src="images/instagram.png" class="social-media-icon" />
+        <img src="images/social5.png" class="social-media-icon" />
       </div>
       <span style="padding-top: 100px; color: #838383;">Copyright © 2024. Starfishyz Technologies Inc.</span>
     </div>

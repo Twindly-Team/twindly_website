@@ -61,6 +61,9 @@ body {
   margin: 100px auto;
   align-items: center;
 }
+.social-media-icons {
+  gap: 56px;
+}
 .social-media-icon {
   width: 56px;
   height: 56px;
