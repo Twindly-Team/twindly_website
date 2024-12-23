@@ -22,9 +22,13 @@ body {
   background-color: rgb(26, 26, 26);
   background-image: url('../images/HOMEPAGE.png');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .top-bar-logo {
   width: 22px;
@@ -35,6 +39,7 @@ body {
   margin: 20px 40px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+  justify-content: space-between;
 }
 .brand-title {
   font-family: 'Rigatoni', sans-serif;
@@ -51,7 +56,7 @@ body {
   padding-bottom: 1600px;
   align-items: center;
 }
-.footer {
+.section {
   gap: 100px;
   margin: 100px auto;
   align-items: center;
@@ -89,14 +94,14 @@ body {
   font-family: 'Rigatoni', sans-serif;
 }
 .gradient-image {
-    position: relative; /* Position relative to contain the pseudo-element */
-    display: inline-block; /* Fit the image size */
+  position: relative; /* Position relative to contain the pseudo-element */
+  display: inline-block; /* Fit the image size */
 }
 .gradient-image img {
-    display: block; /* Remove bottom space around the image */
-    width: 100%; /* Set image to full width of the container */
-    height: 100%; /* Maintain aspect ratio */
-    object-fit: cover;
+  display: block; /* Remove bottom space around the image */
+  width: 100%; /* Set image to full width of the container */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover;
 }
 .gradient-image::after {
   content: ""; /* Required to show the pseudo-element */
@@ -109,14 +114,14 @@ body {
   pointer-events: none; /* Ensure gradient is non-interactive */
 }
 .gradient-image-right {
-    position: relative; /* Position relative to contain the pseudo-element */
-    display: inline-block; /* Fit the image size */
+  position: relative; /* Position relative to contain the pseudo-element */
+  display: inline-block; /* Fit the image size */
 }
 .gradient-image-right img {
-    display: block; /* Remove bottom space around the image */
-    width: 100%; /* Set image to full width of the container */
-    height: 100%; /* Maintain aspect ratio */
-    object-fit: cover;
+  display: block; /* Remove bottom space around the image */
+  width: 100%; /* Set image to full width of the container */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover;
 }
 .gradient-image-right::after {
   content: ""; /* Required to show the pseudo-element */
@@ -129,10 +134,36 @@ body {
   pointer-events: none; /* Ensure gradient is non-interactive */
 }
 .subscription-form {
-  margin: 100px auto;
+  width: 100%;
+  gap: 40px;
 }
-.social-media-label {
+.section-header-label {
   font-family: 'Rigatoni', sans-serif;
   font-size: 30px;
   color: white;
+}
+.form-floating {
+  padding: 0 200px;
+}
+.form-control {
+  background-color: rgba(217, 217, 217, 0.2);
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  height: 60px;
+  padding-left: 36px;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.8)
+}
+.subscription-button {
+  background-color: rgba(120, 97, 255, 1);
+  border: none;
+  border-radius: 24px;
+  height: 48px;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 48px;
+  margin: 0 auto;
 }
