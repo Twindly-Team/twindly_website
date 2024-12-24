@@ -8,6 +8,9 @@
   <style>
     /* Media query for mobile devices */
     @media (max-width: 480px) {
+      .top-bar {
+        margin: 20px 24px;
+      }
       .brand-title {
         font-size: 28px; /* Smaller font size for mobile */
       }
@@ -28,6 +31,47 @@
       .social-media-icon {
         width: 32px;
         height: 32px;
+      }
+      .highlight-item {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 24px;
+      }
+      .highlight-header-left {
+        width: 100%;
+        gap: 12px;
+        margin: 0 24px;
+        box-sizing: border-box;
+      }
+      .highlight-header-right {
+        width: 100%;
+        gap: 12px; 
+        margin: 0 24px;
+        align-items: flex-end; 
+        box-sizing: border-box;
+      }
+      .highlight-title {
+        font-family: 'Rigatoni', sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: white;
+      }
+      .highlight-subtitle {
+        font-family: 'Hubot-Sans', sans-serif;
+        color: #838383;
+        font-size: 16px;
+        line-height: 34px;
+      }
+      .gradient-image-right {
+        position: relative; /* Position relative to contain the pseudo-element */
+        display: inline-block; /* Fit the image size */
+        width: 100%;
+      }
+      .gradient-image-right::after {
+        background: none;
       }
     }
   </style>
@@ -60,26 +104,24 @@
     </div>
     <!-- highlights -->
     <div class="VStack" style="gap: 300px;">
-      <div class="HStack highlight-item">
-        <div class="VStack" style="width: 50%; gap: 12px; max-width: 600px;">
-          <div class="VStack" style="margin-left: 166px;">
-            <img src="images/logo.svg" width="72" height="93" />
-            <span class="highlight-title">Twindly: Your <br />AI Twin for <br />Smarter Dating</span>
-            <span class="highlight-subtitle">
-              <p>Match faster, Connect deeper. Your AI Twin learns, mimics, and represents you.</p>
-              <p>Create your AI Twin now and start connecting like never before!</p>
-            </span>
-          </div>
+      <div class="highlight-item">
+        <div class="VStack highlight-header-left">
+          <img src="images/logo.svg" width="72" height="93" />
+          <span class="highlight-title">Twindly: Your <br />AI Twin for <br />Smarter Dating</span>
+          <span class="highlight-subtitle">
+            <p>Match faster, Connect deeper. Your AI Twin learns, mimics, and represents you.</p>
+            <p>Create your AI Twin now and start connecting like never before!</p>
+          </span>
         </div>
-        <div class="gradient-image-right" style="width: 50%;">
+        <div class="gradient-image-right">
           <img src="images/highlight1.png"/>
         </div>
       </div>
-      <div class="HStack highlight-item">
+      <div class="highlight-item">
         <div class="gradient-image">
           <img src="images/highlight2.png"/>
         </div>
-        <div class="VStack" style="gap: 12px; margin-right: 166px; align-items: flex-end; max-width: 500px;">
+        <div class="VStack highlight-header-right">
           <img src="images/logo.svg" width="72" height="93" />
           <span class="highlight-title" style="text-align: right;">Double the<br /> Chat<br /> Double the<br /> Fun</span>
           <div class="highlight-subtitle" style="text-align: right;">
@@ -88,8 +130,8 @@
           </div>
         </div>
       </div>
-      <div class="HStack highlight-item">
-        <div class="VStack" style="gap: 12px; margin-left: 166px; max-width: 600px;">
+      <div class="highlight-item">
+        <div class="VStack highlight-header-left">
           <img src="images/logo.svg" width="72" height="93" />
           <p class="highlight-title">Build your <br />Tag-Driven AI <br />Twin</p>
           <div class="highlight-subtitle">

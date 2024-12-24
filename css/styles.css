@@ -69,9 +69,24 @@ body {
   height: 56px;
 }
 .highlight-item {
+  display: flex;
+  flex-direction: row;
   gap: 24px;
   justify-content: space-between;
   align-items: center;
+}
+.highlight-header-left {
+  width: 50%;
+  gap: 12px;
+  margin-left: 160px;
+  box-sizing: border-box;
+}
+.highlight-header-right {
+  width: 50%;
+  gap: 12px; 
+  margin-right: 160px; 
+  box-sizing: border-box;
+  align-items: flex-end;
 }
 .highlight-title {
   font-family: 'Rigatoni', sans-serif;
@@ -119,6 +134,7 @@ body {
 .gradient-image-right {
   position: relative; /* Position relative to contain the pseudo-element */
   display: inline-block; /* Fit the image size */
+  width: 50%;
 }
 .gradient-image-right img {
   display: block; /* Remove bottom space around the image */
