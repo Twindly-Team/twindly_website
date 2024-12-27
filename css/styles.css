@@ -60,6 +60,7 @@ body {
   gap: 100px;
   margin: 100px auto;
   align-items: center;
+  text-align: center;
 }
 .social-media-icons {
   gap: 56px;
@@ -78,13 +79,13 @@ body {
 .highlight-header-left {
   width: 50%;
   gap: 12px;
-  margin-left: 160px;
+  margin-left: 120px;
   box-sizing: border-box;
 }
 .highlight-header-right {
   width: 50%;
   gap: 12px; 
-  margin-right: 160px; 
+  margin-right: 120px; 
   box-sizing: border-box;
   align-items: flex-end;
 }
@@ -160,6 +161,7 @@ body {
   font-family: 'Rigatoni', sans-serif;
   font-size: 30px;
   color: white;
+  text-transform: uppercase;
 }
 .form-floating {
   padding: 0 200px;
