@@ -159,7 +159,7 @@ body {
 }
 .section-header-label {
   font-family: 'Rigatoni', sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   color: white;
   text-transform: uppercase;
 }
@@ -187,4 +187,5 @@ body {
   color: white;
   padding: 0 48px;
   margin: 0 auto;
+  cursor: pointer;
 }
