@@ -106,11 +106,12 @@ body {
   margin-top: 100px;
   width: 272px;
   height: 44px;
-  border: 0px;
-  border-radius: 22px;
-  background-color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
+  border: 1px solid white;
   font-family: 'Rigatoni', sans-serif;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  cursor: pointer;
 }
 .gradient-image {
   position: relative; /* Position relative to contain the pseudo-element */
