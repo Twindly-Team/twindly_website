@@ -123,16 +123,6 @@ body {
   height: 100%; /* Maintain aspect ratio */
   object-fit: cover;
 }
-.gradient-image::after {
-  content: ""; /* Required to show the pseudo-element */
-  position: absolute;
-  top: 0;
-  right: 0; /* Start gradient overlay from the right */
-  width: 50%; /* Adjust to cover the right side */
-  height: 100%;
-  background: linear-gradient(to left, rgba(26,26,26,0.9), rgba(26,26,26,0)); /* Right to left gradient */
-  pointer-events: none; /* Ensure gradient is non-interactive */
-}
 .gradient-image-right {
   position: relative; /* Position relative to contain the pseudo-element */
   display: inline-block; /* Fit the image size */
@@ -143,16 +133,6 @@ body {
   width: 100%; /* Set image to full width of the container */
   height: 100%; /* Maintain aspect ratio */
   object-fit: cover;
-}
-.gradient-image-right::after {
-  content: ""; /* Required to show the pseudo-element */
-  position: absolute;
-  top: 0;
-  right: 0.5; /* Start gradient overlay from the right */
-  width: 50%; /* Adjust to cover the right side */
-  height: 100%;
-  background: linear-gradient(to right, rgba(26,26,26,0.9), rgba(26,26,26,0)); /* Right to left gradient */
-  pointer-events: none; /* Ensure gradient is non-interactive */
 }
 .subscription-form {
   width: 100%;
