@@ -50,6 +50,7 @@ body {
   font-family: 'Rigatoni', sans-serif;
   font-size: 20px;
   color: white;
+  text-transform: uppercase;
 }
 .header {
   padding-top: 104px;
